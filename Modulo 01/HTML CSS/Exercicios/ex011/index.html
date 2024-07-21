@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagens dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou em simplesmente aumente e diminua o tamanho do seu
+        nabegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!--
+        A tag source dentro de um elemento picture determina quando uma imagem específica será usada com base no parâmetro media, que define uma condição de mídia
+        na tag acima, o source define, que a imagem será usada quando a largura da tela for de até 750 pixels
+        -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <!--a tag picture, permite adicionar imagens, porem permite também, adicionar sources, que são varias fontes-->
+</body>
+
+</html>
