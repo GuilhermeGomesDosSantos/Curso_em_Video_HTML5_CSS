@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagens dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou em simplesmente aumente e diminua o tamanho do seu
+        nabegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--formatos de audio: MP3, WAV e OGG-->
+    <!-- <audio src="midia/happy-mistake.mp3"controls autoplay></audio> -->
+     <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/happy-mistake.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+     </audio>
+     <!--
+     - a tag audio, permite a inclusão de um ou mais arquivos de áudio usando a tag source
+     - a tag source especifica um arquivo de áudio com o atributo src e o tipo do arquivo com o atributo type
+     - o atributo autoplay, faz com que o áudio comece a tocar automaticamente quando a página é carregada
+     - o atributo controls, adiciona controles de reprodução ao áudio, como play, pause, volume, etc.
+     O atributo src define o caminho do arquivo de áudio.
+    O atributo type especifica o tipo de arquivo de áudio, como audio/mpeg, audio/ogg ou audio/wav.
+
+    caso o arquivo mp3 não seja encontrado (ou se não for suportado), tentara tocar o arquivo ogg e assim por diante
+     -->
+</body>
+
+</html>
