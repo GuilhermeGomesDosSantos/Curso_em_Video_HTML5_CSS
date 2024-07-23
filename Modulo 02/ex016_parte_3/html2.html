@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+
+    <style>
+        *{ /*Configurações globais do css*/
+            height: 100%;
+        }
+        body{
+            /*deixando a tela em formato gradiente
+            'to right' é a direção, também pode usar 90deg, que é o formato em graus, to right é da esquerda para a direita
+            to right, para a direita
+            to lefht, para a esquerda
+            to top, para cima, para o topo,
+            to bottom, para baixo*/
+            /*
+            background-image: radial-gradient(circle, #3198E2, #6D59C0, #B93590, #E33F5F, #FDD578);
+            */
+
+            background-image: linear-gradient(to right, #3198E2, #6D59C0, #B93590, #E33F5F, #FDD578);
+            background-attachment: fixed; /*vai deixar o fundo fixo*/
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>
