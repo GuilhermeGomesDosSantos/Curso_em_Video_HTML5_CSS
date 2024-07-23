@@ -11,22 +11,22 @@ body {
 
 main {
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(136, 109, 93, 0.616);
-    width: 600px;
-    padding: 10px;
-    margin: auto;
+    border-radius: 10px; /*define bordas arredondadas com um raio de 10 pixels*/
+    box-shadow: 5px 5px 15px rgba(136, 109, 93, 0.616); /*Adiciona uma sombra ao redor do elemento main*/
+    width: 600px; /*define a largura do elemento main como 600 pixels*/
+    padding: 10px;/*é adicionado um espaço de 10 pixels na tag main, ao redor do conteúdo*/
+    margin: auto;/*centraliza o elemento main horizontalmente na página*/
 }
 
 h1 {
     color: #F39209;
-    text-align: center;
-    text-shadow: 1px 1px 2px rgb(129, 77, 5, 0.726);
+    text-align: center;/*alinha a tag h1 no centro, como o h1 está dentro da tag main, será proporcionalmente centralizado com o tamanho da tag main*/
+    text-shadow: 1px 1px 2px rgb(129, 77, 5, 0.72);
 }
 
 h2 {
     color: #125189;
 }
 p {
-    text-align: justify;
+    text-align: justify;/*Alinha o texto das tags p, de forma justificada*/
 }
