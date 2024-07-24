@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*dependendo de alguns dispositivos (por exemplo TVs), não irão conseguir mostrar talvez a fonte Arial, com isso tentara ser mostrada a segunda fonte adicionada que é Helvetica e assim por diante, isso se chama, CSS web safe combinations*/
+        }
+        /*h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+        } */
+        h1 {/*como o h2 não está sendo chamado, o h2 por conta da herança, irá ter a mesma fonte do body, porque o h2 está dentro do body, automaticamente a tag h2 herda do body a mesma fonte já que ela não recebeu sua própria fonte igual a tag h1*/
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate esse vitae doloribus saepe veritatis numquam sint illo eum, quia ex porro, qui expedita adipisci eos asperiores pariatur repellat quidem soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facilis officia eaque ullam, harum consectetur incidunt doloremque excepturi, ex accusantium minima! Natus mollitia hic iusto cupiditate totam autem. Quaerat, autem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores fuga ullam quos ab aperiam, non error veniam unde quia! Ab, eius! Tenetur amet blanditiis beatae sint laudantium molestias laborum?</p>
+    <h2>Subtítulo de exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa libero ab iste provident expedita dolorum minus nam quod, non debitis id quo eum officia molestiae possimus sint, nisi alias sequi?</p>
+
+
+</body>
+</html>
