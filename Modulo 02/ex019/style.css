@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*
+em HTML é id  --> em CSS é #
+em HTML class --> em CSS é . (ponto)*/
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {/*o h1, que tiver apenas a identificação h1, terá a configuração abaixo*/
+    color: rgb(4, 109, 0);
+}
+
+h1#principal {/*agora o h1, que tiver o id principal, terá a configuração abaixo
+    pode ser adicionado no CSS: h1#principal ou #principal*/
+    text-align: center;
+    background-color: rgb(4, 109, 0);
+    color: white;
+}
+
+h2 {
+    color: rgb(73, 109, 71);
+}
