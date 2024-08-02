@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+
+    <style>
+        /*o container vai ter uma posição relativa*/
+        #container{
+
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-size: 100% 100%;
+            background-color: purple;
+            background-image: url(Imagens/target001.png);
+        }
+
+        #conteudo{
+            /*é usada para posicionar um elemento de forma absoluta em relação ao seu elemento pai mais próximo que tenha uma posição definida
+            */
+            position: absolute;
+            background-size: 100% 100%;
+            background-color: yellow;
+            background-image: url(Imagens/target001.png);
+            height: 200px;
+            width: 400px;
+
+            top: 50%;/*define a distância entre o topo do elemento posicionado e o topo de seu elemento de referência*/
+            left:50%;/*define a distância entre o lado esquerdo do elemento posicionado e o lado esquerdo de seu elemento de referência*/
+
+            transform: translate(-50%, -50%);/* Essa propriedade permite modificar a aparência e a posição de um elemento sem alterar o fluxo do layout do documento*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
