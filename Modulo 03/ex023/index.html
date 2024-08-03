@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            border: 5px solid red;
+        }
+
+        tr.linha{
+            background-color: grey;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.dado{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+    HIERARQUIA DE TABELAS (Simples)
+    TABLE = tabela
+        TABLE ROW = linha de tabela
+            TABLE HEADER = cabeçalho de tabela
+            TABLE DATA = dado de tabela
+    -->
+
+    <table>
+        <tr><!--a tag tr define uma linha em uma tabela html-->
+            <td>A1</td><!--A tag td é usada para definir um valor em uma célula da tabela-->
+            <td>B1
+            <td>C1
+            <!--se tiver algum outro valor a ser colocado logo em seguida e for colocado errado, ele será inserido dentro da ultima tag '<td>C1'-->>
+        </tr>
+
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        
+
+        <tr>
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+            <!--se o valor não for inserido dentro da td, o valor fica em cima ou em baixo da tabela-->
+        </tr>
+    </table>
+</body>
+</html>
