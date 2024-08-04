@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            font-weight: bolder;
+            font-size: 1.3em;
+            padding: 10px;
+        }
+
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        col.cnome{
+            background-color: green;
+        }
+
+        col.cgrupo{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+
+        <colgroup><!--agrupa um conjunto de colunas em uma tabela HTML para que você possa aplicar formatação ou adicionar classes ao grupo em vez de cada célula individua-->
+        <col class="cnome">
+        <!-- <col class="csexo"> -->
+         <col class="cgrupo" span="2"><!--span, é usado para definir quantas colunas uma coluna ou um grupo de colunas deve abranger em uma tabela. Isso é útil quando você deseja aplicar estilos ou atributos a várias colunas de uma tabela simultaneamente.-->
+        <col class="cidade">
+        <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>G</td>
+                <td>19</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>35</td>
+                <td>Médica</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
