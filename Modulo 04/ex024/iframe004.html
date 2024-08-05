@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    
+    <h1>Meu site principal</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consequatur, facere quasi qui inventore excepturi nam deserunt sunt aliquam dicta quas ullam fugiat vero vel, tenetur facilis laborum mollitia magnam.</p>
+
+    <!--
+    1-- O atributo sandbox é uma ferramenta poderosa para melhorar a segurança ao embutir conteúdo de terceiros em sua página. Ele pode bloquear várias ações do conteúdo embutido, como a execução de scripts, abertura de pop-ups, envio de formulários, entre outras, dependendo das permissões especificadas.
+    
+    2-- O referrerpolicy é especialmente útil para controlar informações de privacidade e segurança, garantindo que dados sensíveis ou detalhados sobre a navegação do usuário não sejam divulgados inadvertidamente para sites de terceiros.
+
+    3-- allow-same-origin: Permite que o conteúdo seja tratado como da mesma origem (isso remove algumas das restrições de segurança).
+
+    4-- allow-forms: Permite o envio de formulários.
+
+    5-- allow-scripts: Permite a execução de scripts.
+
+    -->
+    <iframe src="Paginas Extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compativel com isso...
+    </iframe>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo labore numquam, modi consequuntur nesciunt tenetur. Qui nesciunt, maiores ducimus saepe dignissimos voluptates culpa magni tenetur totam nobis ea enim obcaecati.</p>
+</body>
+</html>
