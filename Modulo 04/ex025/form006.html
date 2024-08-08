@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <!--
+    - type=color, irá aparecer um seletor de cores no navegador
+    - value, você pode especificar um valor padrão para aparecer no seletor-->
+    <form action="cadastro.php" autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#000fff">
+        </p>
+
+        <!--
+        - type=range, permite que o usuário escolha um valor de um intervalo de números, usando uma barra de deslizamento
+        - min, é um valor minimo que a barra possui
+        - max, é um valor maximo que a barra possui
+        -->
+        <p>
+            <label for="inivel">Nível de Satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="5">
+        </p>
+
+        <!--type=file, é um campo para adicionar um arquivo por meio do navegador, ex: fotos, PDFs etc-->
+        <p>
+            <label for="ifoto">Foto de perfil: </label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+    </form>
+</body>
+</html>
