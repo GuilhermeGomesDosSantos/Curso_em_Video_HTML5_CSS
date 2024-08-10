@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+    Os media types no CSS são uma parte das media queries e especificam o tipo de dispositivo para o qual o estilo deve ser aplicado. Eles permitem que você defina estilos específicos para diferentes categorias de dispositivos, como telas, impressoras, entre outros.
+
+Aqui estão os principais media types que você pode usar:
+
+    - all: O estilo é aplicado a todos os dispositivos, independentemente do tipo. Este é o valor padrão.
+    - print: O estilo é aplicado quando o documento é visualizado em uma mídia de impressão (por exemplo, ao visualizar uma página na visualização de impressão ou ao imprimir).
+    - screen: O estilo é aplicado quando o documento é visualizado em telas, como monitores de computadores, tablets, smartphones, etc.
+    - speech: O estilo é aplicado para leitores de tela, que convertem o conteúdo da página em voz.
+    -->
+    <title>Media Query</title>
+
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portait)">
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+
+    <!--
+    orientation, são media features permitem que você verifique condições como a largura da tela, altura, orientação, resolução, e outras características, para definir como o conteúdo deve ser exibido
+
+    -> orientation: portrait,  só serão aplicados quando o dispositivo estiver em modo retrato. O modo retrato é quando a altura da tela é maior que a largura, ou seja, a tela está na posição vertical (por exemplo, segurando um smartphone na posição vertical)
+
+    -> orientation: landscape, só serão aplicados quando o dispositivo estiver em modo paisagem. O modo paisagem é quando a largura da tela é maior que a altura, ou seja, a tela está na posição horizontal (por exemplo, segurando um smartphone na posição horizontal ou vendo a tela de um laptop)
+    -->
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+</body>
+</html>
