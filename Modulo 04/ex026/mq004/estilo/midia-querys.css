@@ -61,6 +61,9 @@ Desktop: 992px até 1200px
     body{
         background-image: url(../imagens/back-tablet.jpg);
         background-position: center center;
+
+        width: 100vw;
+        height: 100vh;
     }
 
     img#smartphone{
@@ -98,7 +101,6 @@ Desktop: 992px até 1200px
     main {
         width: 700px;
     }
-    
     img#smartphone{
         display: none;
     }
