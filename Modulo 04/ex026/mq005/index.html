@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
 
     <link rel="stylesheet" href="estilos/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-qierty.css">
 </head>
-<body>
-    
+
+<body onresize="mudarTamanho()">
+
     <header>
         <h1>Meu site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -29,23 +32,43 @@
         <article>
             <h2>Testando Media Queries</h2>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem aspernatur est perspiciatis iste voluptas vitae molestias necessitatibus iusto recusandae iure. Vel pariatur at facilis, ratione expedita necessitatibus mollitia dolores numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam neque numquam est nesciunt facilis reiciendis molestias expedita, vitae optio itaque asperiores iusto incidunt quod debitis. Ducimus ea facere hic quam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem aspernatur est perspiciatis iste voluptas
+                vitae molestias necessitatibus iusto recusandae iure. Vel pariatur at facilis, ratione expedita
+                necessitatibus mollitia dolores numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quisquam neque numquam est nesciunt facilis reiciendis molestias expedita, vitae optio itaque asperiores
+                iusto incidunt quod debitis. Ducimus ea facere hic quam?</p>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo officiis reiciendis natus fugiat officia! Dolorem illum porro nihil autem unde officia? Officia fugiat iusto corporis doloremque nostrum enim quos dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, sed eveniet numquam ut illo, autem quis, voluptatibus doloremque tempore nesciunt similique. Aperiam, itaque consequatur quisquam fugiat facere amet quidem voluptate?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo officiis reiciendis natus fugiat officia!
+                Dolorem illum porro nihil autem unde officia? Officia fugiat iusto corporis doloremque nostrum enim quos
+                dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, sed eveniet numquam ut illo,
+                autem quis, voluptatibus doloremque tempore nesciunt similique. Aperiam, itaque consequatur quisquam
+                fugiat facere amet quidem voluptate?</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro culpa atque dolores similique sint, tempora, sed iure dolorum exercitationem corporis delectus. Nihil pariatur vero, voluptas omnis amet unde exercitationem? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis mollitia itaque ratione eos ipsam sit quod delectus repudiandae deleniti. Placeat illo dolorum magnam quaerat dicta! Voluptatum, quis? Voluptatum, accusamus esse?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro culpa atque dolores similique
+                sint, tempora, sed iure dolorum exercitationem corporis delectus. Nihil pariatur vero, voluptas omnis
+                amet unde exercitationem? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis mollitia
+                itaque ratione eos ipsam sit quod delectus repudiandae deleniti. Placeat illo dolorum magnam quaerat
+                dicta! Voluptatum, quis? Voluptatum, accusamus esse?</p>
         </article>
     </main>
 
     <script>
+
+        function mudarTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
         function clickMenu() {
-            if(itens.style.display == 'block'){
+            if (itens.style.display == 'block') {
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
             }
-            }
-        
+        }
     </script>
 </body>
+
 </html>
