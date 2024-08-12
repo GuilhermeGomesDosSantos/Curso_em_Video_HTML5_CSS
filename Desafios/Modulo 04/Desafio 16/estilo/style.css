@@ -30,7 +30,7 @@ section#login{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
+    overflow: hidden; /*overflow: hidden, é utilizado para controlar o que acontece quando o conteúdo de um elemento excede seu tamanho definido. Quando aplicado, ele esconde qualquer conteúdo que ultrapasse as dimensões especificadas do elemento.*/
 
     background-color: white;
     height: 500px;
