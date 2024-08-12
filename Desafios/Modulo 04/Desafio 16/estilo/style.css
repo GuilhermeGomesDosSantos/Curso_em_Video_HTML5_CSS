@@ -33,7 +33,7 @@ section#login{
     overflow: hidden; /*overflow: hidden, é utilizado para controlar o que acontece quando o conteúdo de um elemento excede seu tamanho definido. Quando aplicado, ele esconde qualquer conteúdo que ultrapasse as dimensões especificadas do elemento.*/
 
     background-color: white;
-    height: 500px;
+    height: 515px;
     width: 250px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
@@ -64,5 +64,53 @@ div#formulario > h1{
 }
 
 div#formulario > p{
+    font-size: 0.8em;
+}
+
+form > input[type=submit] {
+    background-color: #49a09d;
+    border-radius: 5px;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+form > input[type=submit]:hover {
+    background-color: #6cd3cf;
+}
+
+form div.campo {
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+form > div > label {
+    display: none;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: #49a09d;
+    border: 1px solid #49a09d;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+form > a.botao > i{
     font-size: 0.8em;
 }
