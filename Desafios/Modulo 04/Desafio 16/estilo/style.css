@@ -38,8 +38,12 @@ section#login{
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
 
-    transition: width 0.3s, height 0.3s;
-    transition-timing-function: ease;
+    transition: width 0.3s, height 0.3s;/*
+    é uma abreviação que permite que você especifique como as mudanças em uma ou mais propriedades CSS de um elemento devem ocorrer ao longo do tempo. Isso cria um efeito de transição suave entre os estados iniciais e finais de um elemento
+    */
+    transition-timing-function: ease;/*
+    define a velocidade da transição ao longo de sua duração. Ela controla o ritmo da transição, ou seja, se ela será constante, acelerada, desacelerada ou uma combinação dessas.
+    */
 }
 
 section#login > div#imagem{
