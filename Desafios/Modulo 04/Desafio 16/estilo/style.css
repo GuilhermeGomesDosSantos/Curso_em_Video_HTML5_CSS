@@ -1,99 +1,125 @@
 @charset "UTF-8";
 
 /*
-    Paleta de cores
-    Verde: #49a09d
-    Lilas: #5f2c82
+Paleta de cores
+Verde: #49a09d
+Lilás: #5f2c82
 */
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
+    font-size: .98em;
 }
 
-html, body {
+body, html {
     background-color: #5f2c82;
     height: 100vh;
     width: 100vw;
 }
 
-main{
+main {
     position: relative;
     height: 100vh;
     width: 100vw;
+
 }
 
-section#login{
-    position: relative;
+section#login {
+
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden; /*overflow: hidden, é utilizado para controlar o que acontece quando o conteúdo de um elemento excede seu tamanho definido. Quando aplicado, ele esconde qualquer conteúdo que ultrapasse as dimensões especificadas do elemento.*/
-
+    overflow: hidden;
     background-color: white;
-    height: 515px;
     width: 250px;
+    height: 515px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 
-    transition: width 0.3s, height 0.3s;/*
-    é uma abreviação que permite que você especifique como as mudanças em uma ou mais propriedades CSS de um elemento devem ocorrer ao longo do tempo. Isso cria um efeito de transição suave entre os estados iniciais e finais de um elemento
-    */
-    transition-timing-function: ease;/*
-    define a velocidade da transição ao longo de sua duração. Ela controla o ritmo da transição, ou seja, se ela será constante, acelerada, desacelerada ou uma combinação dessas.
-    */
 }
 
-section#login > div#imagem{
+section#login > div#imagem {
     display: block;
-    background-image: url(../imagens/pexels-ivaoo-691710\(1\).jpg);
+    background: #5f2c82 url(../imagens/pexels-ivaoo-691710\(1\).jpg) no-repeat;
     background-size: cover;
+    background-position: left;
     height: 200px;
 }
 
-section#login > div#formulario{
+section#login > div#formulario {
     display: block;
     padding: 10px;
+
 }
 
-div#formulario > h1{
+div#formulario > h1 {
     text-align: center;
     margin-bottom: 10px;
+    font-size: 1.5em;
 }
 
-div#formulario > p{
+div#formulario > p {
     font-size: 0.8em;
 }
 
+form > div.campo {
+    background-color: #5f2c82;
+    border: 2px solid;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > i {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #59c5c2;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-8px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
+}
+
 form > input[type=submit] {
-    background-color: #49a09d;
-    border-radius: 5px;
     display: block;
     font-size: 1em;
     width: 100%;
     height: 40px;
+    background-color: #49a09d;
     color: white;
-    cursor: pointer;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 form > input[type=submit]:hover {
-    background-color: #6cd3cf;
-}
-
-form div.campo {
-    background-color: #5f2c82;
-    display: block;
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    margin: 5px 0px;
-}
-
-form > div > label {
-    display: none;
+    background-color: #295a58;
 }
 
 form > a.botao {
@@ -102,15 +128,20 @@ form > a.botao {
     font-size: 1em;
     width: 100%;
     height: 40px;
-    padding-top: 5px;
+    padding: 5px;
     margin-top: 5px;
-    background-color: white;
-    color: #49a09d;
-    border: 1px solid #49a09d;
-    border-radius: 7px;
+    background-color: #ffffff;
+    color: #295a58;
+    border: 1px solid #40d1cc;
+    border-radius: 5px;
     text-decoration: none;
+
 }
 
-form > a.botao > i{
+form > a.botao:hover {
+    background-color:#348684 
+}
+
+form > a.botao > i {
     font-size: 0.8em;
 }
